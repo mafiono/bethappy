@@ -107,7 +107,7 @@ Configure::write('App.encoding', 'UTF-8');
  *
  * And uncomment the App.baseUrl below:
  */
-	Configure::write('App.baseUrl', env('SCRIPT_NAME'));
+Configure::write('App.baseUrl', env('SCRIPT_NAME'));
 
 
 /**
@@ -119,7 +119,7 @@ Configure::write('App.encoding', 'UTF-8');
  * Set to an array of prefixes you want to use in your application. Use for
  * admin or other prefixed routes.
  *
- * 	Routing.prefixes = array('admin', 'manager');
+  Routing.prefixes = array('admin', 'manager');
  *
  * Enables:
  * 	`admin_index()` and `/admin/controller/index`
