@@ -26,9 +26,9 @@ Router::parseExtensions('rss', 'json', 'xml', 'csv');
 Router::mapResources(array('api', 'pages'));
 
 Router::connect('/', array('plugin' => null, 'controller' => 'layout', 'action' => 'index'));
-//Router::connect('/admin', array('prefix' => 'admin', 'admin' => true, 'controller' => 'users', 'action' => 'login'));
-//Router::connect('/affiliate', array('prefix' => 'affiliate', 'affiliate' => true, 'controller' => 'users', 'action' => 'login'));
-//Router::connect('/admin/acl', array('prefix' => 'admin', 'admin' => true, 'plugin' => 'Acl', 'controller' => 'Acl', 'action' => 'index'));
+Router::connect('/admin', array('prefix' => 'admin', 'admin' => true, 'controller' => 'users', 'action' => 'login'));
+Router::connect('/affiliate', array('prefix' => 'affiliate', 'affiliate' => true, 'controller' => 'users', 'action' => 'login'));
+Router::connect('/admin/acl', array('prefix' => 'admin', 'admin' => true, 'plugin' => 'Acl', 'controller' => 'Acl', 'action' => 'index'));
 
 // Luxon
 Router::connect('/payments/LuxonPay/callback', array('plugin' => 'Payments', 'controller' => 'LuxonPay', 'action' => 'callback'));
